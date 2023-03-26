@@ -1,0 +1,115 @@
+/* 设置页面强制缩放 */
+/*body{*/
+/*    zoom: 0.9;*/
+/*}*/
+
+/* 全局图片不允许拖动 */
+img {
+    -webkit-user-drag: none;
+    /* 设置图片margin */
+    margin-top: 0;
+}
+
+/* el-input输入框 */
+.el-input__inner {
+    background-color: transparent;
+    border-radius: 30px;
+    /*color: #93b5cf;*/
+}
+
+a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+/* 背景canvas样式 */
+.canvas-background {
+    display: flex;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+}
+
+/* element卡片样式重新设置 */
+.text {
+    font-size: 14px;
+}
+.item {
+    margin-bottom: 18px;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {
+    clear: both
+}
+.box-card {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    color: black;
+    /*color: rgba(255, 255, 255, 0.75);*/
+}
+
+/* 设置卡片头部 */
+.el-card__header {
+    height: 7vh;
+}
+/* 设置卡片内容 */
+.el-card__body {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 滚动条样式变更 */
+/* 滚动条轨道的部分 */
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    -webkit-border-radius: 0
+}
+/* 整个滚动条的部分，用来设置宽高 */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px
+}
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #b8b8b8;
+    -webkit-border-radius: 9px;
+    /*outline: 1px solid #fff;*/
+    /*outline-offset: -2px;*/
+    /*border: 1px solid #fff;*/
+    filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5
+}
+/* 点击滚动滑块的样式 */
+::-webkit-scrollbar-thumb:hover {
+    height: 50px;
+    background-color: #878987;
+    -webkit-border-radius: 6px
+}
+
+/* 非特殊按钮设置为透明色 */
+/*.el-button {*/
+/*    background-color: transparent;*/
+/*}*/
+/*!* 设置按钮的文字颜色 *!*/
+/*.el-button--primary {*/
+/*    color: blueviolet;*/
+/*}*/
